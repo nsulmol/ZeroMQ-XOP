@@ -49,7 +49,7 @@ ELSEIF(CMAKE_SIZEOF_VOID_P EQUAL 8)
 ENDIF()
 
 # Set igorPath to be a cached variable, tso the user can override it.
-SET(igorPath ${igorPath} CACHE PATH "Path to Igor executable of interest. \
+SET(igorPath ${igorPath} CACHE FILEPATH "Path to Igor executable of interest. \
 Used by launcher scripts for debugging purposes.")
 
 SET(libname "${PROJECT_NAME}${bitnessWithDash}")
